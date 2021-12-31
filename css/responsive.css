@@ -1,0 +1,243 @@
+/* DISEÑO RESPONSIVE */
+
+/* dispositivos extra largos */
+@media screen and (max-width: 1024px) {
+
+    /* quienes somos */
+    .sobre {
+        display: inline-block;
+    }
+
+    .somos {
+        width: 400px;
+    }
+
+    .texto {
+        font-size: 1.0625rem;
+        text-align: justify;
+    }
+
+    /* clientes */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .cards-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    /* fomulario contacto */
+    #contacto h2 {
+        text-align: center;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-items: center;
+        text-align: center;
+    }
+
+    .datos-personales {
+        width: 200px;
+    }
+
+    .comentario {
+        width: 250px;
+    }
+}
+
+
+/* dispositivos largos */
+@media screen and (max-width: 992px) {
+
+    /* quienes somos */
+    .sobre {
+        display: inline-block;
+    }
+
+    .somos {
+        width: 400px;
+    }
+
+    .texto {
+        font-size: 1.0625rem;
+        text-align: justify;
+    }
+
+    /* clientes */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .cards-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    /* fomulario contacto */
+    #contacto h2 {
+        text-align: center;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-items: center;
+        text-align: center;
+    }
+
+    .datos-personales {
+        width: 200px;
+    }
+
+    .comentario {
+        width: 250px;
+    }
+}
+
+/* dispositivos medios (tablet) */
+@media screen and (max-width: 768px) {
+
+    /* menu */
+    ul li {
+        width: 100%;
+        padding: 20px;
+        text-align: left;
+    }
+    
+    .hide {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    /* quienes somos */
+    .sobre {
+        display: inline-block;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .somos {
+        width: 400px;
+    }
+
+    .texto {
+        font-size: 1.0625rem;
+        text-align: justify;
+    }
+
+    /* clientes */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .cards-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    /* fomulario contacto */
+    #contacto h2 {
+        text-align: center;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-items: center;
+        text-align: center;
+    }
+
+    .datos-personales {
+        width: 200px;
+    }
+
+    .comentario {
+        width: 250px;
+    }
+}
+
+/* dispositivos pequeños(landscape celulares) */
+@media screen and (max-width: 366px) {
+
+    /* menu */
+    ul li {
+        width: 100%;
+        padding: 20px;
+        text-align: left;
+    }
+    
+    .hide {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    /* encabezado */
+    .img-fan {
+        width: 20%;
+    }
+
+    /* quienes somos */
+    .nosotros {
+        padding: 20px;
+    }
+
+    .somos {
+        width: 300px;
+    }
+
+    .texto {
+        font-size: 1.0625rem;
+        justify-items: center;
+    }
+
+    /* clientes */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .cards-2 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    /* fomulario contacto */
+    #contacto h2 {
+        text-align: center;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-items: center;
+        text-align: center;
+    }
+
+    .datos-personales {
+        width: 200px;
+    }
+
+    .comentario {
+        width: 250px;
+    }
+}
