@@ -30,9 +30,9 @@ header {
     height: 650px;
     background: #000428;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(208, 100%, 29%, 0.322), hsla(235, 86%, 5%, 0.76)), url(../img/imgHeader.jpg);
+    background: -webkit-linear-gradient(to right, hsla(208, 100%, 29%, 0.322), hsla(235, 86%, 5%, 0.76)), url(../img/header.jpeg);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(208, 100%, 29%, 0.322), hsla(235, 86%, 5%, 0.76)), url(../img/imgHeader.jpg);
+    background: linear-gradient(to right, hsla(208, 100%, 29%, 0.322), hsla(235, 86%, 5%, 0.76)), url(../img/header.jpeg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
@@ -122,7 +122,7 @@ header .textos-header>img {
 }
 
 .logo-encabezado {
-    width: 50%;
+    max-width: 80%;
 }
 
 .img-fan {
