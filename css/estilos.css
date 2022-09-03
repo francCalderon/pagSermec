@@ -39,20 +39,19 @@ header {
     position: relative;
 }
 
-.menu{
-    color: #f2f2f2;
+/* NAVBAR */
+
+ul li>a{
+    color: #fff !important;
+    font-size: 1rem !important;
 }
 
-nav {
-    text-align: center;
-    padding: 15px;
+ul li>a:hover{
+    color: #406882 !important;
 }
 
-nav ul li{
-    display: inline-block;
-}
-
-nav ul li a{
+.dropdown-menu{
+    background-color: #406882 !important;
 }
 
 .hide {
@@ -63,18 +62,6 @@ nav ul li a{
     cursor: pointer;
     display: none;
   }
-
-nav ul li>a{
-    color: #fff;
-    font-weight: 1000;
-    text-decoration: none;
-    margin-right: 10px;
-    font-size: 0.8125rem;
-}
-
-nav ul li>a:hover {
-    text-decoration: underline;
-}
 
 .encabezado {
     display: grid;
@@ -438,6 +425,17 @@ footer {
     font-size: 15px;
     margin: 20px 0 0 0;
     color: #9e9797;
+}
+
+/* ESTILOS PARA NUEVAS PAGINAS */
+
+#backSeccColor{
+    background-color: #B1D0E0;
+    padding: auto;
+}
+
+#backSeccNoColor{
+    padding: auto;
 }
 
 

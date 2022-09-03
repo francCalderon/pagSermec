@@ -21,46 +21,61 @@
 
 <body>
     <header>
-        <nav class="">
-            <ul>
-                <li><a href="#encabezado">INICIO</a></li>
-                <li><a href="#quienes">QUIENES SOMOS</a></li>
-                <li><a href="#clientes">CLIENTES</a></li>
-                <li><a href="pags/proyEjecutados.html">PROYECTOS EJECUTADOS</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
-            </ul>
-            <!-- <div class="hide">
-                <i class="fa fa-bars" aria-hidden="true"></i>Menu
-            </div> -->
-        </nav>
+        <!-- NAVBAR -->
+        <ul class="nav justify-content-center fw-bold py-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">PRODUCTOS</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="pags/productos/equiposAlternativos.html">EQUIPOS ALTERNATIVOS</a></li>
+                  <li><a class="dropdown-item" href="pags/productos/equipSanitario.html">EQUIPAMIENTO SANITARIO PARA LA PRODUCCI&OacuteN</a></li>
+                  <li><a class="dropdown-item" href="pags/productos/implentosHerramientas.html">IMPLEMENTOS Y HERRAMIENTAS DE PRODUCCI&OacuteN</a></li>
+                  <li><a class="dropdown-item" href="pags/productos/mueblesProd.html">MUEBLES PARA LA PRODUCCI&OacuteN DE ACERO INOXIDABLE </a></li>
+                  <!-- <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Enlace separado</a></li> -->
+                </ul>
+              </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#quienes">QUIENES SOMOS</a>
+              </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#clientes">CLIENTES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pags/proyEjecutados.html">PROYECTOS EJECUTADOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contacto">CONTACTO</a>
+              </li>
+          </ul>
+
 
         <div class="container" id="encabezado">
-            <div class="row">
+            <div class="row text-center">
                 <div class="col-md-4">
                     <img src="img/logoEncabezado.png" class="logo-encabezado" />
                 </div>
             </div>   
-            <div class="row">
-                <div class="col">
-                    <h2 class="text-white fw-bold">Mantenimiento Productivo Total inteligente</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h2 class="text-white fw-bold">MANTENIMIENTO PRODUCTIVO TOTAL E INTELIGENTE</h2>
                 </div>
-            </div>         
-            <div class="fanpages">
-                <div class="fanpage-1">
+            </div>      
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-1 text-center">
                     <a href="https://www.instagram.com/sermecchile" target="_blank">
-                        <img src="img/instagram.png" usemap="#insta" class="img-fan"></a>
-                    <map name="insta">
-                        <area shape="circle" coords="101,102,99" href="https://www.instagram.com/sermecchile" alt=""
-                            target="_blank">
-                    </map>
+                        <img src="img/instagram.png"  class="img-fan">
+                    </a>
                 </div>
-                <div class="fanpage-2">
+                <div class="col-md-1 text-center">
                     <a href="https://wa.me/56952202496?text=Hola,%20quisiera%20realizar%20una%20contización%20de%20trabajo"
-                        target="_blank">
-                        <img src="img/whatsapp.png" class="img-fan"></a>
+                    target="_blank">
+                    <img src="img/whatsapp.png" class="img-fan">
+                </a>
                 </div>
-            </div>
-
+            </div>  
         </div>
         <div class="wave" style="height: 150px; overflow: hidden;">
             <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
