@@ -15,9 +15,22 @@ header {
     height: 650px;
     background: #000428;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(208, 100%, 29%, 0.322), hsla(235, 86%, 5%, 0.76)), url(../img/header.jpeg);
+    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.63), hsla(235, 72%, 29%, 0.692)), url(../img/header.jpeg);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(208, 100%, 29%, 0.322), hsla(235, 86%, 5%, 0.76)), url(../img/header.jpeg);
+    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.63), hsla(235, 72%, 29%, 0.692)), url(../img/header.jpeg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.headerPag{
+    height: 450px;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.37), hsla(235, 72%, 29%, 0.356)), url(../img/imgPages.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.37), hsla(235, 72%, 29%, 0.356)), url(../img/imgPages.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
@@ -198,31 +211,8 @@ header .textos-header>img {
     position: relative;
 }
 
-#contacto h2 {
+section form div > label{
     color: #fff;
-    font-size: 30px;
-}
-
-#contacto .contenedor-contacto .form .datos-personales>label {
-    color: #fff;
-}
-
-#contacto .contenedor-contacto .form .comentario>label {
-    color: #fff;
-}
-
-form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-}
-
-.datos-personales {
-    padding-left: 0;
-}
-
-.comentario {
-    padding-right: 0;
 }
 
 input[type="text"],
@@ -247,9 +237,6 @@ select {
     padding: 20px 20px 20px 20px;
 }
 
-select {
-    padding: 0;
-}
 
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -260,10 +247,6 @@ textarea:focus {
     -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-}
-
-textarea {
-    min-height: 290px;
 }
 
 label,
