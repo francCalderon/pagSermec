@@ -1,61 +1,83 @@
 /* DISEÑO RESPONSIVE */
 
-/* dispositivos extra largos */
-@media screen and (max-width: 1024px) {
-   
+/* pantalla xl */
+@media screen and (max-width: 1200px) {
+
     /* menu */
-    
+
     /* encabezado */
 
     /* mision y vision */
-    
+
     /* clientes */
-    
+
     /* fomulario contacto */
+
+    /* areas de mantenimiento */
+
+    .mants {
+        width: 200px !important;
+    }
 }
 
 
-/* dispositivos largos */
+/* pantalla lg */
 @media screen and (max-width: 992px) {
 
-    
+
     /* menu */
-    
+
     /* encabezado */
 
     /* mision y vision */
-    
+
     /* clientes */
-    
+
     /* fomulario contacto */
+
+    /* areas de mantenimiento */
+
+    .mants {
+        width: 200px !important;
+    }
 }
 
-/* dispositivos medios (tablet) */
-@media screen and (max-width: 768px) {
+/* pantalla md */
+@media screen and (max-width: 720px) {
     /* menu */
-    
+
     /* encabezado */
 
     /* mision y vision */
 
     /* clientes */
-    
+
     /* fomulario contacto */
-   
+
+    /* areas de mantenimiento */
+
+    .mants {
+        width: 200px !important;
+    }
+
 }
 
-/* dispositivos pequeños(landscape celulares) */
-@media screen and (max-width: 366px) {
+/* pantalla sm */
+@media screen and (max-width: 576px) {
 
     /* menu */
-    
+
     /* encabezado */
 
     /* mision y vision */
 
     /* clientes */
-    
+
     /* fomulario contacto */
 
+    /* areas de mantenimiento */
 
+    .mants {
+        width: 200px !important;
+    }
 }

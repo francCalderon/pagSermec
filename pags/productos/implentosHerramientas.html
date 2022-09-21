@@ -22,46 +22,61 @@
 <body>
     <header class="headerPag">
         <!-- NAVBAR -->
-        <ul class="nav justify-content-center fw-bold py-3">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html">INICIO</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                    aria-expanded="false">PRODUCTOS</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/pags/productos/equiposAlternativos.html">EQUIPOS ALTERNATIVOS</a>
-                    </li>
-                    <li><a class="dropdown-item" href="/pags/productos/equipSanitario.html">EQUIPAMIENTO SANITARIO PARA
-                            LA PRODUCCI&OacuteN</a></li>
-                    <li><a class="dropdown-item" href="/pags/productos/implentosHerramientas.html">IMPLEMENTOS Y
-                            HERRAMIENTAS DE PRODUCCI&OacuteN</a></li>
-                    <li><a class="dropdown-item" href="/pags/productos/mueblesProd.html">MUEBLES PARA LA PRODUCCI&OacuteN
-                            DE ACERO INOXIDABLE </a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                    aria-expanded="false">SERVICIOS</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/pags/serviciosMant/areaCarnica.html">MANTENIMIENTO INDUSTRIAL
-                            - &AacuteREA C&AacuteRNICA</a></li>
-                    <li><a class="dropdown-item" href="/pags/serviciosMant/areaPanaderia.html">MANTENIMIENTO INDUSTRIAL -
-                            &AacuteREA PANADER&IacuteA</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/index.html">CLIENTES</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/pags/proyEjecutados.html">PROYECTOS EJECUTADOS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/index.html">CONTACTO</a>
-            </li>
-        </ul>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="MenuNavegation" class="collapse navbar-collapse justify-content-center">
+                    <ul class="nav fw-bold py-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">PRODUCTOS</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/pags/productos/equiposAlternativos.html">EQUIPOS
+                                        ALTERNATIVOS</a>
+                                </li>
+                                <li><a class="dropdown-item" href="/pags/productos/equipSanitario.html">EQUIPAMIENTO
+                                        SANITARIO PARA
+                                        LA PRODUCCI&OacuteN</a></li>
+                                <li><a class="dropdown-item"
+                                        href="/pags/productos/implentosHerramientas.html">IMPLEMENTOS Y
+                                        HERRAMIENTAS DE PRODUCCI&OacuteN</a></li>
+                                <li><a class="dropdown-item" href="/pags/productos/mueblesProd.html">MUEBLES PARA LA
+                                        PRODUCCI&OacuteN
+                                        DE ACERO INOXIDABLE </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">SERVICIOS</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/pags/serviciosMant/areaCarnica.html">MANTENIMIENTO
+                                        INDUSTRIAL -
+                                        &AacuteREA C&AacuteRNICA</a></li>
+                                <li><a class="dropdown-item" href="/pags/serviciosMant/areaPanaderia.html">MANTENIMIENTO
+                                        INDUSTRIAL -
+                                        &AacuteREA PANADER&IacuteA</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">CLIENTES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pags/proyEjecutados.html">PROYECTOS EJECUTADOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-        <div class="container justify-content-center align-items-center py-xl-5">
+        <div class="container justify-content-center align-items-center py-5">
             <div class="row text-center py-xl-5">
                 <div class="text-white">
                     <h1 class="fw-bold">IMPLEMENTOS Y HERRAMIENTAS DE PRODUCCI&OacuteN</h1>
@@ -83,10 +98,11 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-4 text-center">
                     <figure class="figure imgProd">
-                        <img src="/img/productos/implementos/poruña.jpg" class="figure-img img-fluid rounded my-auto py-5" alt="PURUÑAS">
+                        <img src="/img/productos/implementos/poruña.jpg"
+                            class="figure-img img-fluid rounded my-auto py-5" alt="PURUÑAS">
                     </figure>
                 </div>
-                <div class="col-md-4 fw-bold">
+                <div class="col-md-4 fw-bold py-3">
                     <h2 class="text-center fw-bold">PORUÑAS</h2>
                     <p class="justify-content-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Laboriosam obcaecati laudantium molestias accusamus fuga reprehenderit quod molestiae soluta
@@ -99,13 +115,13 @@
     <section id="backSeccColor">
         <div class="container-fluid">
             <div class="row justify-content-center align-items-center">
-                <div class="col-md-4 fw-bold">
+                <div class="col-md-4 fw-bold py-3">
                     <h2 class="text-center fw-bold">TIRADORES DE BANDEJA</h2>
                     <p class="justify-content-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Laboriosam obcaecati laudantium molestias accusamus fuga reprehenderit quod molestiae soluta
                         error vel explicabo unde, nisi doloribus reiciendis, veniam cum earum, eligendi non!</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center py-3">
                     <figure class="figure imgProd">
                         <img src="/img/300x300.jpg" class="figure-img img-fluid rounded my-auto py-5"
                             alt="TIRADORES DE BANDEJA">
@@ -118,13 +134,13 @@
     <section id="backSeccNoColor">
         <div class="container-fluid">
             <div class="row justify-content-center align-items-center">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center py-3">
                     <figure class="figure imgProd">
-                        <img src="/img/productos/implementos/ganchoCarne.jpg" class="figure-img img-fluid rounded my-auto py-5"
-                            alt="GARRAS PARA CARNE">
+                        <img src="/img/productos/implementos/ganchoCarne.jpg"
+                            class="figure-img img-fluid rounded my-auto py-5" alt="GARRAS PARA CARNE">
                     </figure>
                 </div>
-                <div class="col-md-4 fw-bold">
+                <div class="col-md-4 fw-bold py-3">
                     <h2 class="text-center fw-bold">GARRAS PARA CARNE</h2>
                     <p class="justify-content-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Laboriosam obcaecati laudantium molestias accusamus fuga reprehenderit quod molestiae soluta
@@ -137,15 +153,16 @@
     <section id="backSeccColor">
         <div class="container-fluid">
             <div class="row justify-content-center align-items-center">
-                <div class="col-md-4 fw-bold">
+                <div class="col-md-4 fw-bold py-3">
                     <h2 class="text-center fw-bold">PERCHEROS</h2>
                     <p class="justify-content-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Laboriosam obcaecati laudantium molestias accusamus fuga reprehenderit quod molestiae soluta
                         error vel explicabo unde, nisi doloribus reiciendis, veniam cum earum, eligendi non!</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center py-3">
                     <figure class="figure imgProd">
-                        <img src="/img/productos/implementos/perchero.jpg" class="figure-img img-fluid rounded my-auto py-5" alt="PERCHEROS">
+                        <img src="/img/productos/implementos/perchero.jpg"
+                            class="figure-img img-fluid rounded my-auto py-5" alt="PERCHEROS">
                     </figure>
                 </div>
             </div>
@@ -153,19 +170,23 @@
     </section>
 
     <footer>
-        <div class="contenedor-footer">
-            <div class="content-foo">
-                <h4>Tel&eacutefono</h4>
-                <p>+56990665685</p>
-            </div>
-            <div class="content-foo">
-                <h4>Email</h4>
-                <p>sermec.chile@gmail.com</p>
-            </div>
-            <div class="content-foo">
-                <h4>Ubicaci&oacuten</h4>
-                <p><a href="https://goo.gl/maps/UkqAuhEtXB6yLkyr5" target="_blank"
-                        style="text-decoration: none;">V&eacutease ubicaci&oacuten</a></p>
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-md-4 content-foo">
+                    <h4>Tel&eacutefono</h4>
+                    <p>+569 90665685</p>
+                </div>
+                <div class="col-md-4 content-foo">
+                    <h4>Email</h4>
+                    <a href="#contacto" style="text-decoration: none;">
+                        <p>sermec.chile@gmail.com</p>
+                    </a>
+                </div>
+                <div class="col-md-4 content-foo">
+                    <h4>Ubicaci&oacuten</h4>
+                    <p><a href="https://goo.gl/maps/UkqAuhEtXB6yLkyr5" target="_blank"
+                            style="text-decoration: none;">V&eacutease ubicaci&oacuten</a></p>
+                </div>
             </div>
         </div>
         <h2 class="titulo-final">&copy; SermecChile | Derechos Reservados</h2>
