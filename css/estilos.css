@@ -1,128 +1,131 @@
+:root{
+    --fondoNav: #f2f2f2;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "open sans";
 }
 
 body {
     font-family: "open sans";
+    background: var(--fondoNav);
 }
+
 
 /* HEADER */
 
 header {
-    height: 650px;
+    width: 100%;
+    height: 600px;
     background: #000428;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.63), hsla(235, 72%, 29%, 0.692)), url(../img/header.jpeg);
+    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.63), hsla(235, 72%, 29%, 0.459)), url(../img/header.jpeg);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.63), hsla(235, 72%, 29%, 0.692)), url(../img/header.jpeg);
+    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.63), hsla(235, 72%, 29%, 0.459)), url(../img/header.jpeg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: cover;
     background-attachment: fixed;
-    position: relative;
+    background-position: center;
+    background-size: cover;
 }
 
-.headerPag{
-    height: 450px;
-    background: #000428;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.37), hsla(235, 72%, 29%, 0.356)), url(../img/imgPages.jpg);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.37), hsla(235, 72%, 29%, 0.356)), url(../img/imgPages.jpg);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+#encabezado{
+    padding: 82px 0 0;
 }
 
-/* NAVBAR */
-ul li>a{
+/* nuevo nav */
+ 
+/* .contenedor-nav{
+display: flex;
+margin: auto;
+width: 100%;
+justify-content: center;
+align-items: center;
+max-width:1000px;
+height:inherit;
+overflow: hidden;
+}
+  
+nav .enlaces a{
+display: inline-block;
+padding: 5px 0;
+margin-right: 17px;
+font-size: 17px;
+font-weight: 300;
+text-decoration: none;
+border-bottom: 3px solid transparent;
+color: inherit;
+}
+
+nav .enlaces a:hover{
+border-bottom: 3px solid #1498a4;
+transition: 0.6s;
+} */
+
+/* NAV*/
+
+.icono{
+    display:none;
+    /* font-size: 24px; */
+    /* padding: 23.5px 20px; */
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+}
+
+.nav1{
+    background: transparent;
+    height: 80px;
+    color:#fff;
+}
+
+.nav2{
+    background: var(--fondo);
+    height:100px;
+    color:#000;
+}
+
+.cont-nav{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    height:inherit;
+    overflow: hidden;
+}
+
+nav ul li a{
     color: #fff !important;
     font-size: 1rem !important;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    color: inherit;
 }
 
-ul li>a:hover{
-    color: #406882 !important;
+nav ul li > a:hover{
+    border-bottom: 1px solid #1498a4;
+    transition: 0.1s;
 }
 
 .dropdown-menu{
-    background-color: #406882 !important;
-}
-
-.hide {
-    padding: 16px;
-    font-size: 22px;
-    background: hsla(236, 46%, 30%, 0.897);
-    color: white;
-    cursor: pointer;
-    display: none;
-  }
-
-.encabezado {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    grid-template-areas: "textos-header";
-    justify-content: center;
-}
-
-.fanpages {
-    padding-top: 1.25em;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(1, auto);
-    grid-auto-flow: dense;
-    text-align: center;
-}
-
-.fanpage-1 {
-    text-align: end;
-    padding-right: 20px;
-}
-
-.fanpage-2 {
-    text-align: start;
-}
-
-header .textos-header {
-    text-align: center;
-    grid-area: 'textos-header';
-}
-
-header .textos-header>img {
-    width: 16.875em;
-}
-
-.textos-header h1 {
-    font-size: 50px;
-    color: #fff;
-}
-
-.textos-header h2 {
-    font-size: 30px;
-    font-weight: 300;
-    color: #fff;
+    background-color: #6998ab !important;
 }
 
 .logo-encabezado {
-    max-width: 80%;
+    max-width: 18rem;
 }
 
-.img-fan {
-    width: 3.12rem;
-}
-
-.wave {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.imgFan {
+    max-width: 3rem;
 }
 
 /* QUIENES SOMOS*/
 
 
-/* Clientes carrusel*/
+/* CLIENTES CARRUSEL*/
 
 .carrusel {
     height: auto;
@@ -156,7 +159,7 @@ header .textos-header>img {
 }
 
 
-/* Galeria */
+/* PROYECTOS EJECUTADOS */
 
 .imagen-port {
     overflow: hidden;
@@ -166,7 +169,7 @@ header .textos-header>img {
     border-radius: 50%;
 }
 
-.imagen-port>img {
+.imagen-port > img {
     width: auto;
     height: 45vh;
     object-fit: cover;
@@ -175,8 +178,9 @@ header .textos-header>img {
 
 .hover-galeria {
     position: absolute;
-    width: 18.75rem;
-    height: 18.75rem;
+    color: var(--fondoNav);
+    width: 100%;
+    height: 100%;
     top: 0;
     transform: scale(0);
     background: hsla(236, 46%, 30%, 0.719);
@@ -189,7 +193,7 @@ header .textos-header>img {
 }
 
 .hover-galeria img {
-    width: 3.12rem;
+    width: 5.12rem;
 }
 
 .imagen-port:hover .hover-galeria {
@@ -303,6 +307,7 @@ footer {
     padding: 60px 0 30px 0;
     margin: auto;
     overflow: hidden;
+    
 }
 
 .contenedor-footer {
@@ -331,6 +336,7 @@ footer {
 
 .content-foo a {
     color: #ccc;
+    text-decoration: none;
 }
 
 .titulo-final {
@@ -341,6 +347,20 @@ footer {
 }
 
 /* ESTILOS PARA NUEVAS PAGINAS */
+
+.headerPag{
+    width: 100%;
+    height: 450px;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.37), hsla(235, 72%, 29%, 0.356)), url(../img/imgPages.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.37), hsla(235, 72%, 29%, 0.356)), url(../img/imgPages.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
 
 #backSeccColor{
     background-color: #B1D0E0;
@@ -359,3 +379,61 @@ footer {
     max-width: 350px !important;
 }
 
+/* Preloader */
+.hidden{
+    overflow: hidden;
+  }
+  
+  .centrado{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+  
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+    width: 13px;
+    background: #cef;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  
+  .lds-facebook div:nth-child(1) {
+    left: 6px;
+    animation-delay: -0.24s;
+  }
+  
+  .lds-facebook div:nth-child(2) {
+    left: 26px;
+    animation-delay: -0.12s;
+  }
+  
+  .lds-facebook div:nth-child(3) {
+    left: 45px;
+    animation-delay: 0;
+  }
+  
+  @keyframes lds-facebook {
+    0% {
+      top: 6px;
+      height: 51px;
+    }
+  
+    50%,
+    100% {
+      top: 19px;
+      height: 26px;
+    }
+  }
