@@ -1,4 +1,4 @@
-:root{
+:root {
     --fondoNav: #f2f2f2;
 }
 
@@ -18,24 +18,128 @@ body {
 
 header {
     width: 100%;
-    height: 600px;
+    height: 575px;
     background: #000428;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.63), hsla(235, 72%, 29%, 0.459)), url(../img/header.jpeg);
+    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.63), hsla(235, 72%, 29%, 0.459)), url(../img/header2.jpg);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.63), hsla(235, 72%, 29%, 0.459)), url(../img/header.jpeg);
+    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.63), hsla(235, 72%, 29%, 0.459)), url(../img/header2.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
 
-#encabezado{
-    padding: 82px 0 0;
+/* ESTILOS PARA NUEVAS PAGINAS */
+
+.headerPag {
+    width: 100%;
+    height: 570px;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.37), hsla(235, 72%, 29%, 0.356)), url(../img/imgPages.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.37), hsla(235, 72%, 29%, 0.356)), url(../img/imgPages.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#titulo-pags {
+    padding: 130px 0 130px 0;
+}
+
+#titulo-pags-pr {
+    padding: 155px 0 155px 0;
+}
+
+#backSeccColor {
+    background-color: #B1D0E0;
+    padding: auto;
+}
+
+#backSeccNoColor {
+    padding: auto;
+}
+
+.imgServ {
+    background-color: #B1D0E0;
+}
+
+.imgProd {
+    max-width: 350px !important;
+}
+
+#encabezado {
+    padding: 2px 0 0 0;
+}
+
+.figure-img{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .5);
+}
+
+/* NAV*/
+
+.icono {
+    display: none;
+    /* font-size: 24px; */
+    /* padding: 23.5px 20px; */
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+.nav1 {
+    background: transparent;
+    height: 80px;
+    color: #fff;
+}
+
+.nav2 {
+    background: var(--fondo);
+    height: 100px;
+    color: #000;
+}
+
+.cont-nav {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    height: inherit;
+    overflow: hidden;
+}
+
+nav ul li a {
+    color: #fff !important;
+    font-size: 1rem !important;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    color: inherit;
+}
+
+nav ul li>a:hover {
+    border-bottom: 1px solid #1498a4;
+    transition: 0.1s;
+}
+
+.dropdown-menu {
+    background-color: #6998ab !important;
+}
+
+.logo-encabezado {
+    max-width: 18rem;
+}
+
+.imgFan {
+    max-width: 3rem;
 }
 
 /* nuevo nav */
- 
+
 /* .contenedor-nav{
 display: flex;
 margin: auto;
@@ -63,63 +167,65 @@ border-bottom: 3px solid #1498a4;
 transition: 0.6s;
 } */
 
-/* NAV*/
+/* Preloader */
 
-.icono{
-    display:none;
-    /* font-size: 24px; */
-    /* padding: 23.5px 20px; */
-}
-
-nav{
-    width: 100%;
-    position: fixed;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
-}
-
-.nav1{
-    background: transparent;
-    height: 80px;
-    color:#fff;
-}
-
-.nav2{
-    background: var(--fondo);
-    height:100px;
-    color:#000;
-}
-
-.cont-nav{
-    display: flex;
-    margin: auto;
-    align-items: center;
-    height:inherit;
+.hidden {
     overflow: hidden;
 }
 
-nav ul li a{
-    color: #fff !important;
-    font-size: 1rem !important;
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
-    color: inherit;
+.centrado {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-nav ul li > a:hover{
-    border-bottom: 1px solid #1498a4;
-    transition: 0.1s;
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
 }
 
-.dropdown-menu{
-    background-color: #6998ab !important;
+.lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+    width: 13px;
+    background: #cef;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
 
-.logo-encabezado {
-    max-width: 18rem;
+.lds-facebook div:nth-child(1) {
+    left: 6px;
+    animation-delay: -0.24s;
 }
 
-.imgFan {
-    max-width: 3rem;
+.lds-facebook div:nth-child(2) {
+    left: 26px;
+    animation-delay: -0.12s;
+}
+
+.lds-facebook div:nth-child(3) {
+    left: 45px;
+    animation-delay: 0;
+}
+
+@keyframes lds-facebook {
+    0% {
+        top: 6px;
+        height: 51px;
+    }
+
+    50%,
+    100% {
+        top: 19px;
+        height: 26px;
+    }
 }
 
 /* QUIENES SOMOS*/
@@ -132,14 +238,14 @@ nav ul li > a:hover{
     display: flex;
     align-items: center;
 }
-  
+
 .carrusel-items {
     display: flex;
     overflow-x: hidden;
     overflow-y: hidden;
     padding: 30px 0px;
 }
-  
+
 .carrusel-item {
     min-width: 310px;
     max-width: 320px;
@@ -147,13 +253,13 @@ nav ul li > a:hover{
     outline: 2px solid black;
     cursor: pointer;
 }
-  
+
 .carrusel-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-  
+
 .carrusel-item:hover {
     transform: scale(1.2);
 }
@@ -169,7 +275,7 @@ nav ul li > a:hover{
     border-radius: 50%;
 }
 
-.imagen-port > img {
+.imagen-port>img {
     width: auto;
     height: 45vh;
     object-fit: cover;
@@ -215,7 +321,7 @@ nav ul li > a:hover{
     position: relative;
 }
 
-section form div > label{
+section form div>label {
     color: #fff;
 }
 
@@ -276,10 +382,10 @@ input#boton {
     font-size: 20px;
     background-color: #f2f2f2;
     border-radius: 25px;
-    font-weight: 600;    
+    font-weight: 600;
 }
 
-input#boton:hover{
+input#boton:hover {
     background-color: #030a7e;
     text-decoration: none;
 }
@@ -290,11 +396,11 @@ input#botonReset {
     font-family: "open sans"bold;
     font-size: 20px;
     background-color: #f2f2f2;
-    border-radius: 25px;    
-    font-weight: 600;  
+    border-radius: 25px;
+    font-weight: 600;
 }
 
-input#botonReset:hover{
+input#botonReset:hover {
     background-color: #030a7e;
     text-decoration: none;
 }
@@ -307,7 +413,7 @@ footer {
     padding: 60px 0 30px 0;
     margin: auto;
     overflow: hidden;
-    
+
 }
 
 .contenedor-footer {
@@ -345,95 +451,3 @@ footer {
     margin: 20px 0 0 0;
     color: #9e9797;
 }
-
-/* ESTILOS PARA NUEVAS PAGINAS */
-
-.headerPag{
-    width: 100%;
-    height: 450px;
-    background: #000428;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.37), hsla(235, 72%, 29%, 0.356)), url(../img/imgPages.jpg);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.37), hsla(235, 72%, 29%, 0.356)), url(../img/imgPages.jpg);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
-
-#backSeccColor{
-    background-color: #B1D0E0;
-    padding: auto;
-}
-
-#backSeccNoColor{
-    padding: auto;
-}
-
-.imgServ{
-    background-color: #B1D0E0;
-}
-
-.imgProd{
-    max-width: 350px !important;
-}
-
-/* Preloader */
-.hidden{
-    overflow: hidden;
-  }
-  
-  .centrado{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: #000;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .lds-facebook {
-    display: inline-block;
-    position: relative;
-    width: 64px;
-    height: 64px;
-  }
-  
-  .lds-facebook div {
-    display: inline-block;
-    position: absolute;
-    left: 6px;
-    width: 13px;
-    background: #cef;
-    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
-  }
-  
-  .lds-facebook div:nth-child(1) {
-    left: 6px;
-    animation-delay: -0.24s;
-  }
-  
-  .lds-facebook div:nth-child(2) {
-    left: 26px;
-    animation-delay: -0.12s;
-  }
-  
-  .lds-facebook div:nth-child(3) {
-    left: 45px;
-    animation-delay: 0;
-  }
-  
-  @keyframes lds-facebook {
-    0% {
-      top: 6px;
-      height: 51px;
-    }
-  
-    50%,
-    100% {
-      top: 19px;
-      height: 26px;
-    }
-  }

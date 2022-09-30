@@ -7,20 +7,27 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <title>&Aacuterea C&aacuternica</title>
+    <title>SermecChile - Área Cárnica</title>
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/estilos.css">
     <link rel="stylesheet" href="/css/responsive.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
 <body>
     <header class="headerPag">
+
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
@@ -28,9 +35,9 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div id="MenuNavegation" class="collapse navbar-collapse justify-content-center">
-                    <ul class="nav fw-bold py-3">
+                    <ul class="nav fw-bold">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/index.html">INICIO</a>
+                            <a class="nav-link active" id="links" aria-current="page" href="/index.html">INICIO</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
@@ -43,7 +50,7 @@
                                         SANITARIO PARA
                                         LA PRODUCCI&OacuteN</a></li>
                                 <li><a class="dropdown-item"
-                                        href="pags/productos/implentosHerramientas.html">IMPLEMENTOS Y
+                                        href="/pags/productos/implentosHerramientas.html">IMPLEMENTOS Y
                                         HERRAMIENTAS DE PRODUCCI&OacuteN</a></li>
                                 <li><a class="dropdown-item" href="/pags/productos/mueblesProd.html">MUEBLES PARA LA
                                         PRODUCCI&OacuteN
@@ -76,8 +83,8 @@
             </div>
         </nav>
 
-        <div class="container justify-content-center align-items-center py-xl-5">
-            <div class="row text-center py-5">
+        <div class="container justify-content-center align-items-center" id="titulo-pags">
+            <div class="row text-center">
                 <div class="text-white">
                     <h1 class="fw-bold">MANTENIMIENTO INDUSTRIAL</h1>
                     <h1 class="fw-bold">&AacuteREA C&AacuteRNICA</h1>
@@ -85,12 +92,11 @@
             </div>
         </div>
 
-        <div class="wave" style="height: 150px; overflow: hidden;">
+        <div style="height: 150px; overflow: hidden;">
             <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                     style="height: 100%; width: 100%;">
                     <path d="M-34.71,-15.28 C284.14,333.05 268.34,-131.73 551.06,53.78 L500.00,150.00 L0.00,150.00 Z"
-                        style="stroke: none; fill: rgb(255, 255, 255);">
-                    </path>
+                        style="stroke: none; fill: rgb(255, 255, 255);"></path>
                 </svg>
             </div>
         </div>
@@ -98,114 +104,94 @@
 
     <section id="backSeccNoColor">
         <div class="container text-center">
-            <div class="row align-items-center py-5">
-                <div class="col-sm-4 mants">
-                    <figure class="figure imgProd">
-                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded my-auto py-3"
+            <div class="row justify-content-center align-items-center py-5">
+                <div class="col-md-4 mants">
+                    <figure class="figure">
+                        <img src="/img/servicios/PREVENTIVO.jpg" class="figure-img img-fluid rounded"
                             alt="MANTENIMIENTO PREVENTIVO">
-                        <h4 class="fw-bold">MANTENIMIENTO PREVENTIVO</h4>
+                    </figure>
+                    <h4 class="fw-bold">MANTENIMIENTO PREVENTIVO</h4>
                 </div>
-                <div class="col-sm-4 mants">
-                    <figure class="figure imgProd">
-                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded my-auto py-3"
+                <div class="col-md-4 mants">
+                    <figure class="figure">
+                        <img src="/img/servicios/CORRECTIVO.jpg" class="figure-img img-fluid rounded"
                             alt="MANTENIMIENTO CORRECTIVO">
-                        <h4 class="fw-bold">MANTENIMIENTO CORRECTIVO</h4>
                     </figure>
+                    <h4 class="fw-bold">MANTENIMIENTO CORRECTIVO</h4>
                 </div>
-                <div class="col-sm-4 mants">
-                    <figure class="figure imgProd">
-                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded my-auto py-3"
+                <div class="col-md-4 mants">
+                    <figure class="figure">
+                        <img src="/img/servicios/EMERGENCIAS.jpg" class="figure-img img-fluid rounded"
                             alt="TRABAJOS DE EMERGENCIAS OPERATIVOS">
-                        <h4 class="fw-bold">TRABAJOS DE EMERGENCIAS OPERATIVOS</h4>
                     </figure>
+                    <h4 class="fw-bold">TRABAJOS DE EMERGENCIAS OPERATIVOS</h4>
                 </div>
             </div>
         </div>
     </section>
 
     <section>
-        <div class="col imgServ mx-5">
+        <div class="col imgServ mx-5 py-5">
             <div class="row text-center">
-                <div class="col-sm-4">
-                    <figure class="figure imgProd">
-                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded my-auto py-5" alt="INYECTORA">
-                        <h4 class="fw-bold">INYECTORA</h4>
+                <div class="col-md-6">
+                    <figure class="figure">
+                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded" alt="INYECTORA">
                     </figure>
+                    <h4 class="fw-bold">INYECTORA</h4>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-6">
                     <figure class="figure imgProd">
-                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded my-auto py-5" alt="MOLEDORA">
-                        <h4 class="fw-bold">MOLEDORA</h4>
+                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded" alt="MOLEDORA">
                     </figure>
+                    <h4 class="fw-bold">MOLEDORA</h4>
                 </div>
-            </div>
-        </div>
-        <div class="col imgServ mx-5">
-            <div class="row text-center">
-                <div class="col-sm-4">
+                <div class="col-md-6">
                     <figure class="figure imgProd">
-                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded my-auto py-5"
-                            alt="CORTADORA DE HUESO">
-                        <h4 class="fw-bold">CORTADORA DE HUESO</h4>
+                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded" alt="CORTADORA DE HUESO">
                     </figure>
+                    <h4 class="fw-bold">CORTADORA DE HUESO</h4>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-6">
                     <figure class="figure imgProd">
-                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded my-auto py-5" alt="MEZCLADORA">
-                        <h4 class="fw-bold">MEZCLADORA</h4>
+                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded" alt="MEZCLADORA">
                     </figure>
+                    <h4 class="fw-bold">MEZCLADORA</h4>
                 </div>
-            </div>
-        </div>
-        <div class="col imgServ mx-5">
-            <div class="row text-center">
-                <div class="col-sm-4">
+                <div class="col-md-6">
                     <figure class="figure imgProd">
-                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded my-auto py-5"
-                            alt="TENDERIZADORA">
-                        <h4 class="fw-bold">TENDERIZADORA</h4>
+                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded" alt="TENDERIZADORA">
                     </figure>
+                    <h4 class="fw-bold">TENDERIZADORA</h4>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-6">
                     <figure class="figure imgProd">
-                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded my-auto py-5"
-                            alt="AGITADOR DE SALMUERA">
-                        <h4 class="fw-bold">AGITADOR DE SALMUERA</h4>
+                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded" alt="AGITADOR DE SALMUERA">
                     </figure>
+                    <h4 class="fw-bold">AGITADOR DE SALMUERA</h4>
                 </div>
-            </div>
-        </div>
-        <div class="col imgServ mx-5">
-            <div class="row text-center">
-                <div class="col-sm-4">
+                <div class="col-md-6">
                     <figure class="figure imgProd">
-                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded my-auto py-5"
-                            alt="MÁQUINA DE HIELO">
-                        <h4 class="fw-bold">MÁQUINA DE HIELO</h4>
+                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded" alt="MÁQUINA DE HIELO">
                     </figure>
+                    <h4 class="fw-bold">MÁQUINA DE HIELO</h4>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-6">
                     <figure class="figure imgProd">
-                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded my-auto py-5" alt="TÓMBOLA">
-                        <h4 class="fw-bold">TÓMBOLA</h4>
+                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded" alt="TÓMBOLA">
                     </figure>
+                    <h4 class="fw-bold">TÓMBOLA</h4>
                 </div>
-            </div>
-        </div>
-        <div class="col imgServ mx-5">
-            <div class="row text-center">
-                <div class="col-sm-4">
+                <div class="col-md-6">
                     <figure class="figure imgProd">
-                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded my-auto py-5" alt="CLIPEADORA">
-                        <h4 class="fw-bold">CLIPEADORA</h4>
+                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded" alt="CLIPEADORA">
                     </figure>
+                    <h4 class="fw-bold">CLIPEADORA</h4>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-6">
                     <figure class="figure imgProd">
-                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded my-auto py-5"
-                            alt="CINTAS TRANSPORTADORAS">
-                        <h4 class="fw-bold">CINTAS TRANSPORTADORAS</h4>
+                        <img src="/img/300x300.jpg" class="figure-img img-fluid rounded" alt="CINTAS TRANSPORTADORAS">
                     </figure>
+                    <h4 class="fw-bold">CINTAS TRANSPORTADORAS</h4>
                 </div>
             </div>
         </div>
@@ -241,10 +227,11 @@
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <!-- <script type="text/javascript" src="js/jquery.arctext.js"></script> -->
     <script type="text/javascript" src="http://www.google.com/jsapi"></script>
     <script type="text/javascript" src="js/contact-form.js"></script>
     <script type="text/javascript" src="js/carrusel.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
