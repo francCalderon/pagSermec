@@ -11,269 +11,325 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
-<body>
-    <header>
+<body class="hidden">
+    <div class="centrado" id="onload">
+        <div class="lds-facebook">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#encabezado">INICIO</a></li>
-                <li><a href="#quienes">QUIENES SOMOS</a></li>
-                <li><a href="#clientes">CLIENTES</a></li>
-                <li><a href="pags/proyEjecutados.html">PROYECTOS EJECUTADOS</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
-            </ul>
-            <!-- <div class="hide">
-                <i class="fa fa-bars" aria-hidden="true"></i>Menu
-            </div> -->
+    </div>
+
+    <header>
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="MenuNavegation" class="collapse navbar-collapse justify-content-center">
+                    <ul class="nav fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="links" aria-current="page" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">PRODUCTOS</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="pags/productos/equiposAlternativos.html">EQUIPOS
+                                        ALTERNATIVOS</a>
+                                </li>
+                                <li><a class="dropdown-item" href="pags/productos/equipSanitario.html">EQUIPAMIENTO
+                                        SANITARIO PARA
+                                        LA PRODUCCI&OacuteN</a></li>
+                                <li><a class="dropdown-item"
+                                        href="pags/productos/implentosHerramientas.html">IMPLEMENTOS Y
+                                        HERRAMIENTAS DE PRODUCCI&OacuteN</a></li>
+                                <li><a class="dropdown-item" href="pags/productos/mueblesProd.html">MUEBLES PARA LA
+                                        PRODUCCI&OacuteN
+                                        DE ACERO INOXIDABLE </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">SERVICIOS</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="pags/serviciosMant/areaCarnica.html">MANTENIMIENTO
+                                        INDUSTRIAL -
+                                        &AacuteREA C&AacuteRNICA</a></li>
+                                <li><a class="dropdown-item" href="pags/serviciosMant/areaPanaderia.html">MANTENIMIENTO
+                                        INDUSTRIAL -
+                                        &AacuteREA PANADER&IacuteA</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#CONTACTO">CLIENTES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pags/proyEjecutados.html">PROYECTOS EJECUTADOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
-        <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $(".hide").on('click', function () {
-                    $("nav ul").toggle('slow');
-                })
-            })
-        </script> -->
-
-        <div class="encabezado" id="encabezado">
-            <div class="textos-header">
-                <img src="img/logoEncabezado.png" class="logo-encabezado" />
-                <h1>Sermec Chile</h1>
-                <h2>Trabajo para la producci&oacuten industrial</h2>
-            </div>
-            <div class="fanpages">
-                <div class="fanpage-1">
-                    <a href="https://www.instagram.com/sermecchile" target="_blank">
-                        <img src="img/instagram.png" usemap="#insta" class="img-fan"></a>
-                    <map name="insta">
-                        <area shape="circle" coords="101,102,99" href="https://www.instagram.com/sermecchile" alt=""
-                            target="_blank">
-                    </map>
+        <!-- LOGO -->
+        <div class="container" id="encabezado">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h2 class="text-white fw-bold">SERMEC CHILE</h2>
+                    <img src="img/logoHeaderSF.png" class="logo-encabezado" />
                 </div>
-                <div class="fanpage-2">
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h2 class="text-white fw-bold">MANTENIMIENTO PRODUCTIVO TOTAL E INTELIGENTE</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-1">
+                    <a href="https://www.instagram.com/sermecchile" target="_blank">
+                        <img class="imgFan" src="img/instagram.png">
+                    </a>
+                </div>
+                <div class="col-md-1">
                     <a href="https://wa.me/56952202496?text=Hola,%20quisiera%20realizar%20una%20contización%20de%20trabajo"
                         target="_blank">
-                        <img src="img/whatsapp.png" class="img-fan"></a>
+                        <img class="imgFan" src="img/whatsapp.png">
+                    </a>
                 </div>
             </div>
-
         </div>
-        <div class="wave" style="height: 150px; overflow: hidden;">
-            <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        <div style="height: 100px; overflow: hidden;">
+            <div style="height: 100px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                     style="height: 100%; width: 100%;">
                     <path d="M-34.71,-15.28 C284.14,333.05 268.34,-131.73 551.06,53.78 L500.00,150.00 L0.00,150.00 Z"
                         style="stroke: none; fill: rgb(255, 255, 255);"></path>
-                </svg></div>
+                </svg>
+            </div>
         </div>
     </header>
+
     <main>
-        <section class="nosotros" id="quienes">
-            <div class="contenedor-somos">
-                <h2 class="titulo">QUIENES SOMOS</h2>
-                <div class="sobre">
-                    <img src="img/quienesSomos.jpg" class="somos">
-                    <div class="texto">
-                        <p>Somos una empresa que ofrece servicios de mantenimiento a la comunidad, entregando un gran
-                            compromiso con nuestros clientes. Nos enfocamos en el mantenimiento industrial, entregando
-                            un trabajo de buena calidad en los desafíos propuestos por los clientes, donde las
-                            soluciones son &oacuteptimas y aceptadas por quienes requieren de nuestro servicio.
-                        </p>
+        <!-- MISION Y VISION -->
+        <section id="backSeccNoColor">
+            <div class="container-fluid">
+                <div class="row text-center py-5">
+                    <h1 class="fw-bold">MISI&OacuteN</h1>
+                </div>
+                <div class="row justify-content-center align-items-center py-3">
+                    <div class="col-md-4 text-center">
+                        <figure class="figure imgProd">
+                            <img src="/img/MISION.jpg" class="figure-img img-fluid rounded" alt="mision">
+                        </figure>
+                    </div>
+                    <div class="col-md-6 text-start fs-4">
+                        <p>Es generar lazos de confianza y seguridad en nuestros
+                            clientes sobre sus activos fijos de producción, a través una administración diferente, que
+                            consta en tecnología de última generación, supliendo cada necesidad de información del
+                            activo fijo, tanto operativa, financiera y calidad en el servicio prestado.</p>
+                    </div>
+                </div>
+                <div class="row text-center py-5">
+                    <h1 class="fw-bold">VISI&OacuteN</h1>
+                </div>
+                <div class="row justify-content-center align-items-center py-3">
+                    <div class="col-md-6 text-end fs-4">
+                        <p>Generar reconocimiento global por parte de nuestros clientes, de buenas prácticas, excelente
+                            servicio, eficiencia, eficacia en la administración de sus activos fijos productivos.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <figure class="figure imgProd">
+                            <img src="/img/header.jpeg" class="figure-img img-fluid rounded" alt="vision">
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CLIENTES -->
+        <section id="backSeccColor">
+            <div class="container" id="clientes">
+                <div class="row text-center py-4">
+                    <h1 class="fw-bold" id="CLIENTES">CLIENTES</h1>
+                </div>
+                <div class="carrusel py-4">
+                    <div class="carrusel-items">
+                        <div class="carrusel-item ">
+                            <img src="img/clientes/cliente(1).png" alt="">
+                        </div>
+                        <div class="carrusel-item">
+                            <img src="img/clientes/cliente(2).png" alt="">
+                        </div>
+                        <div class="carrusel-item">
+                            <img src="img/clientes/cliente(3).png" alt="">
+                        </div>
+                        <div class="carrusel-item">
+                            <img src="img/clientes/cliente(4).png" alt="">
+                        </div>
+                        <div class="carrusel-item">
+                            <img src="img/clientes/cliente(5).png" alt="">
+                        </div>
+                        <div class="carrusel-item">
+                            <img src="img/clientes/cliente(6).png" alt="">
+                        </div>
+                        <div class="carrusel-item">
+                            <img src="img/clientes/cliente(7).png" alt="">
+                        </div>
+                        <div class="carrusel-item">
+                            <img src="img/clientes/cliente(8).png" alt="">
+                        </div>
+                        <div class="carrusel-item">
+                            <img src="img/clientes/cliente(9).png" alt="">
+                        </div>
+                        <div class="carrusel-item">
+                            <img src="img/clientes/cliente(10).png" alt="">
+                        </div>
+                        <div class="carrusel-item">
+                            <img src="img/clientes/cliente(11).png" alt="">
+                        </div>
+                        <div class="carrusel-item">
+                            <img src="img/clientes/cliente(12).png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="clientes" id="clientes">
-            <div class="contendor-clientes">
-                <h2 class="titulo">CLIENTES</h2>
-                <div class="cards">
-                    <div class="card">
-                        <img src="img/clientes/ganaderaSantaIsidora.png" alt="">
-                        <div class="contenido-texto-card">
-                            <h4 id="ganadera">GANADERA SANTA ISIDORA</h4>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/clientes/carnesLjubetic.png" alt="">
-                        <div class="contenido-texto-card">
-                            <h4 id="carnes">CARNES LJUBETIC</h4>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/clientes/frigoCer.png" alt="">
-                        <div class="contenido-texto-card">
-                            <h4 id="frigocer">FRIGOCER</h4>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="img/clientes/frioFood.png" alt="">
-                        <div class="contenido-texto-card">
-                            <h4 id="frio">FRIO FOOD</h4>
-                        </div>
-                    </div>
+
+        <!-- PROYECTOS EJECUTADOS -->
+        <section id="backSeccNoColor">
+            <div class="container-fluid">
+                <div class="row text-center py-4">
+                    <h2 class="fw-bold">PROYECTOS EJECUTADOS</h2>
                 </div>
-                <div class="cards-2">
-                    <div class="card">
-                        <img src="img/clientes/laSantaCarne.png" alt="">
-                        <div class="contenido-texto-card">
-                            <h4 id="santa">LA SANTA CARNE</h4>
+                <div class="row justify-content-evenly py-5">
+                    <div class="col-auto imagen-port px-0">
+                        <img src="img/proyectos/img1.PNG" alt="">
+                        <div class="hover-galeria">
+                            <a href="/pags/proyEjecutados.html" target="_blank">
+                                <img src="img/ingenieria.png" alt="">
+                            </a>
+                            <p>RACK DE ACERO INOXIDABLE</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="img/clientes/productor.png" alt="">
-                        <div class="contenido-texto-card">
-                            <h4 id="productor">PRODUCTOR</h4>
+                    <div class="col-auto imagen-port px-0">
+                        <img src="img/proyectos/img2.PNG" alt="">
+                        <div class="hover-galeria">
+                            <a href="/pags/proyEjecutados.html" target="_blank">
+                                <img src="img/ingenieria.png" alt="">
+                            </a>
+                            <p>CARRO DE ACERO INOXIDABLE</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="img/clientes/elCarnicero.png" alt="">
-                        <div class="contenido-texto-card">
-                            <h4 id="carnicero">EL CARNICERO</h4>
+                    <div class="col-auto imagen-port px-0">
+                        <img src="img/proyectos/img3.PNG" alt="">
+                        <div class="hover-galeria">
+                            <a href="/pags/proyEjecutados.html" target="_blank">
+                                <img src="img/ingenieria.png" alt="">
+                            </a>
+                            <p>MANTENIMIENTO INDUSTRIAL</p>
+                        </div>
+                    </div>
+                    <div class="col-auto imagen-port px-0">
+                        <img src="img/proyectos/img4.PNG" alt="">
+                        <div class="hover-galeria">
+                            <a href="/pags/proyEjecutados.html" target="_blank">
+                                <img src="img/ingenieria.png" alt="">
+                            </a>
+                            <p>PILARES Y VIGAS IPE</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="portafolio" id="portafolio">
-            <div class="contenedor novedades"></div>
-            <h2 class="titulo">PROYECTOS EJECUTADOS</h2>
-            <div class="galeria-port">
-                <div class="imagen-port">
-                    <img src="img/proyectos/img1.PNG" alt="">
-                    <div class="hover-galeria">
-                        <img src="img/ingenieria.png" alt="">
-                        <p>RACK DE ACERO INOXIDABLE</p>
-                    </div>
-                </div>
-                <div class="imagen-port">
-                    <img src="img/proyectos/img2.PNG" alt="">
-                    <div class="hover-galeria">
-                        <img src="img/ingenieria.png" alt="">
-                        <p>CARRO DE ACERO INOXIDABLE</p>
-                    </div>
-                </div>
-                <div class="imagen-port">
-                    <img src="img/proyectos/img3.PNG" alt="">
-                    <div class="hover-galeria">
-                        <img src="img/ingenieria.png" alt="">
-                        <p>MANTENIMIENTO INDUSTRIAL</p>
-                    </div>
-                </div>
-                <div class="imagen-port">
-                    <img src="img/proyectos/img4.PNG" alt="">
-                    <div class="hover-galeria">
-                        <img src="img/ingenieria.png" alt="">
-                        <p>PILARES Y VIGAS IPE</p>
-                    </div>
-                </div>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <section id="contacto">
+            <div class="row text-center py-5">
+                <h1 class="text-white fw-bold" id="CONTACTO">CONTACTO</h1>
             </div>
-        </section>
-        <section class="contacto" id="contacto">
-            <div class="contenedor-contacto">
-                <h2 class="titulo">CONTACTO</h2>
-                <div class="form">
-                    <form class="formulario_contacto" action="enviar.php" method="get" name="contacto" role="form">
-                        <div class="datos-personales">
-                            <label>Nombre *</label>
-                            <input type="text" name="name" class="text" id="name" placeholder="Nombre" required="" />
-                            <label>Email *</label>
-                            <input type="text" name="mail" class="text" id="mail" placeholder="Email" required="" />
-                            <label>Telefono</label>
-                            <input type="text" name="phone" class="subject" id="subject" placeholder="Teléfono"
-                                required="" />
-                        </div>
-                        <div class="comentario">
-                            <label>Escriba su solicitud de cotizaci&oacuten *</label>
-                            <textarea name="message" class="message" placeholder="Mensaje ..." id="message"></textarea>
-                        </div>
-                        <div class="boton">
-                            <input name="Submit" type="submit" id="boton" value="Enviar" />
-                            <input type="Reset" id="botonReset" value="Borrar todo">
-                        </div>
-                    </form>
+            <form class="container-fluid" action="enviar.php" method="get" name="contacto" role="form">
+                <div class="row justify-content-center">
+                    <div class="col-auto px-5">
+                        <label for="nombre">Nombre *</label>
+                        <input type="text" name="name" class="text" id="name" placeholder="Nombre" required="" />
+                        <label for="email">Email *</label>
+                        <input type="text" name="mail" class="text" id="mail" placeholder="Email" required="" />
+                        <label for="telefno">Telefono</label>
+                        <input type="text" name="phone" class="subject" id="subject" placeholder="Teléfono"
+                            required="" />
+                    </div>
+                    <div class="col-auto px-5">
+                        <label>Escriba su solicitud de cotizaci&oacuten *</label>
+                        <textarea name="message" class="message" placeholder="Mensaje ..." id="message"
+                            style="height: 333px"></textarea>
+                    </div>
+                    <div class="col-auto px-5 text-center">
+                        <input name="Submit" type="submit" id="boton" value="Enviar" />
+                        <input type="Reset" id="botonReset" value="Borrar todo">
+                    </div>
                 </div>
-            </div>
+            </form>
         </section>
     </main>
+
+    <!-- PIE DE PAGINA -->
     <footer>
-        <div class="contenedor-footer">
-            <div class="content-foo">
-                <h4>Tel&eacutefono</h4>
-                <p>+56990665685</p>
-            </div>
-            <div class="content-foo">
-                <h4>Email</h4>
-                <p>sermec.chile@gmail.com</p>
-            </div>
-            <div class="content-foo">
-                <h4>Ubicaci&oacuten</h4>
-                <p><a href="https://goo.gl/maps/UkqAuhEtXB6yLkyr5" target="_blank"
-                        style="text-decoration: none;">V&eacutease ubicaci&oacuten</a></p>
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-md-4 content-foo">
+                    <h4>Tel&eacutefono</h4>
+                    <p>+569 90665685</p>
+                </div>
+                <div class="col-md-4 content-foo">
+                    <h4>Email</h4>
+                    <a href="#contacto">
+                        <p>sermec.chile@gmail.com</p>
+                    </a>
+                </div>
+                <div class="col-md-4 content-foo">
+                    <h4>Ubicaci&oacuten</h4>
+                    <p><a href="https://goo.gl/maps/UkqAuhEtXB6yLkyr5" target="_blank"
+                            style="text-decoration: none;">V&eacutease ubicaci&oacuten</a></p>
+                </div>
             </div>
         </div>
         <h2 class="titulo-final">&copy; SermecChile | Derechos Reservados</h2>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+    </script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.arctext.js"></script>
     <script type="text/javascript" src="http://www.google.com/jsapi"></script>
     <script type="text/javascript" src="js/contact-form.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#ganadera').arctext({
-                radius: 100,
-                dir: -1
-            });
-        });
+    <script type="text/javascript" src="js/carrusel.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
-        $(document).ready(function () {
-            $('#carnes').arctext({
-                radius: 100,
-                dir: -1
-            });
-        });
 
-        $(document).ready(function () {
-            $('#frigocer').arctext({
-                radius: 100,
-                dir: -1
-            });
-        });
-
-        $(document).ready(function () {
-            $('#frio').arctext({
-                radius: 100,
-                dir: -1
-            });
-        });
-
-        $(document).ready(function () {
-            $('#santa').arctext({
-                radius: 100,
-                dir: -1
-            });
-        });
-
-        $(document).ready(function () {
-            $('#productor').arctext({
-                radius: 100,
-                dir: -1
-            });
-        });
-
-        $(document).ready(function () {
-            $('#carnicero').arctext({
-                radius: 100,
-                dir: -1
-            });
-        });
-    </script>
 </body>
 
 </html>
