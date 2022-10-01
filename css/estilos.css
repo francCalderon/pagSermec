@@ -18,7 +18,7 @@ body {
 
 header {
     width: 100%;
-    height: 575px;
+    height: 620px;
     background: #000428;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.63), hsla(235, 72%, 29%, 0.459)), url(../img/header2.jpg);
@@ -34,7 +34,7 @@ header {
 
 .headerPag {
     width: 100%;
-    height: 570px;
+    height: 590px;
     background: #000428;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.37), hsla(235, 72%, 29%, 0.356)), url(../img/imgPages.jpg);
@@ -71,8 +71,16 @@ header {
     max-width: 350px !important;
 }
 
+.figure-serv {
+    max-width: 300px !important;
+}
+
 #encabezado {
-    padding: 2px 0 0 0;
+    padding: 30px 0 0 0;
+}
+
+#encabezado-fanPage {
+    padding: 30px 0 0 0;
 }
 
 .figure-img{
@@ -89,6 +97,7 @@ header {
 
 nav {
     width: 100%;
+    height: 90px;
     position: fixed;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
 }
