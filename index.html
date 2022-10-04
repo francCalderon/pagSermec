@@ -38,12 +38,12 @@
 
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-md">
-            <div class="container-fluid">
+            <div class="container">
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div id="MenuNavegation" class="collapse navbar-collapse justify-content-center">
-                    <ul class="nav fw-bold">
+                <div class="collapse navbar-collapse justify-content-center" id="MenuNavegation" >
+                    <ul class="navbar-nav fw-bold" >
                         <li class="nav-item">
                             <a class="nav-link active" id="links" aria-current="page" href="index.html">INICIO</a>
                         </li>
@@ -51,7 +51,7 @@
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                                 aria-expanded="false">PRODUCTOS</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="pags/productos/equiposAlternativos.html">EQUIPOS
+                                <li><a class="dropdown-item " href="pags/productos/equiposAlternativos.html">EQUIPOS
                                         ALTERNATIVOS</a>
                                 </li>
                                 <li><a class="dropdown-item" href="pags/productos/equipSanitario.html">EQUIPAMIENTO
@@ -78,13 +78,13 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#CONTACTO">CLIENTES</a>
+                            <a class="nav-link" href="#clientes">CLIENTES</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pags/proyEjecutados.html">PROYECTOS EJECUTADOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">CONTACTO</a>
+                            <a class="nav-link" href="#contacto">CONTACTO</a>
                         </li>
                     </ul>
                 </div>
@@ -92,7 +92,7 @@
         </nav>
 
         <!-- LOGO -->
-        <div class="container" id="encabezado">
+        <div class="container-sm" id="encabezado">
             <div class="row text-center justify-content-evenly align-items-center">
                 <div class="col-md-4">
                     <img src="img/logoHeaderSF.png" class="logo-encabezado"/>
@@ -103,12 +103,12 @@
                 </div>
             </div>
             <div class="row justify-content-center text-center" id="encabezado-fanPage">
-                <div class="col-md-1">
+                <div class="col-auto">
                     <a href="https://www.instagram.com/sermecchile" target="_blank">
                         <img class="imgFan" src="img/instagram.png">
                     </a>
                 </div>
-                <div class="col-md-1">
+                <div class="col-auto">
                     <a href="https://wa.me/56952202496?text=Hola,%20quisiera%20realizar%20una%20contización%20de%20trabajo"
                         target="_blank">
                         <img class="imgFan" src="img/whatsapp.png">
@@ -116,7 +116,7 @@
                 </div>
             </div>
         </div>
-        <div style="height: 100px; overflow: hidden;">
+        <div class="" style="height: 100px; overflow: hidden;">
             <div style="height: 100px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                     style="height: 100%; width: 100%;">
                     <path d="M-34.71,-15.28 C284.14,333.05 268.34,-131.73 551.06,53.78 L500.00,150.00 L0.00,150.00 Z"
@@ -129,7 +129,7 @@
     <main>
         <!-- MISION Y VISION -->
         <section id="backSeccNoColor">
-            <div class="container-fluid">
+            <div class="container-fluid" id="mision">
                 <div class="row text-center py-5">
                     <h1 class="fw-bold">MISI&OacuteN</h1>
                 </div>
@@ -170,32 +170,20 @@
                 <div class="row text-center py-4">
                     <h1 class="fw-bold" id="CLIENTES">CLIENTES</h1>
                 </div>
-                <div class="carrusel py-4">
+                <div class="py-5">
                     <div class="carrusel-items">
-                        <div class="carrusel-item ">
+                        <div class="carrusel-item">
                             <img src="img/clientes/cliente(1).png" alt="">
                         </div>
-                        <!-- <div class="carrusel-item">
-                            <img src="img/clientes/cliente(2).png" alt="">
-                        </div> -->
                         <div class="carrusel-item">
                             <img src="img/clientes/cliente(3).png" alt="">
                         </div>
-                        <div class="carrusel-item">
-                            <img src="img/clientes/cliente(4).png" alt="">
-                        </div>
-                        <!-- <div class="carrusel-item">
-                            <img src="img/clientes/cliente(5).png" alt="">
-                        </div> -->
                         <div class="carrusel-item">
                             <img src="img/clientes/cliente(6).png" alt="">
                         </div>
                         <div class="carrusel-item">
                             <img src="img/clientes/cliente(7).png" alt="">
                         </div>
-                        <!-- <div class="carrusel-item">
-                            <img src="img/clientes/cliente(8).png" alt="">
-                        </div> -->
                         <div class="carrusel-item">
                             <img src="img/clientes/cliente(9).png" alt="">
                         </div>
@@ -248,12 +236,12 @@
                         </div>
                     </div>
                     <div class="col-auto imagen-port px-0">
-                        <img src="img/proyectos/img4.PNG" alt="">
+                        <img src="img/proyectos/img4.png" alt="">
                         <div class="hover-galeria">
                             <a href="/pags/proyEjecutados.html" target="_blank">
                                 <img src="img/ingenieria.png" alt="">
                             </a>
-                            <p>PILARES Y VIGAS IPE</p>
+                            <p>REFUERZO DE LOZA</p>
                         </div>
                     </div>
                 </div>
@@ -262,8 +250,8 @@
 
         <!-- FORMULARIO DE CONTACTO -->
         <section id="contacto">
-            <div class="row text-center py-5">
-                <h1 class="text-white fw-bold" id="CONTACTO">CONTACTO</h1>
+            <div class="row text-center py-5"  id="contacto">
+                <h1 class="text-white fw-bold">CONTACTO</h1>
             </div>
             <form class="container-fluid" action="enviar.php" method="get" name="contacto" role="form">
                 <div class="row justify-content-center">
