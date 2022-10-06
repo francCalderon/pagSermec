@@ -26,18 +26,19 @@ try {
     $mail->isSMTP();                                                    //Send using SMTP
     $mail->Host       = 'mail.sermecchile.com';                         //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                           //Enable SMTP authentication
-    $mail->Username   = 'web@sermecchile.com';                          //SMTP username
-    $mail->Password   = 'Katy"(=/"="!';                                 //SMTP password
+    $mail->Username   = 'cotizacionpagina@sermecchile.com';             //SMTP username
+    $mail->Password   = '-EPWB*kfx%vR';                                 //SMTP password
     $mail->SMTPSecure = 'ssl';                                          //Enable implicit TLS encryption
     $mail->Port       = 465;                                            //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('web@sermecchile.com', $nombreCabecera);             //que se envie desde el correo del hosting           
-    $mail->addAddress('cotizaciones_sermecchile@sermecchile.com');                                       //al correo de destino
+    $mail->setFrom('cotizacionpagina@sermecchile.com', $nombreCabecera);             //que se envie desde el correo del hosting           
+    $mail->addAddress('ventas@sermecchile.com');                                       //al correo de destino
     // $mail->addAddress('ellen@example.com');                          //Name is optional
     // $mail->addReplyTo('info@example.com', 'Information');
     $mail->addCC('katherine.leon.toledo@gmail.com', $nombreCabecera);
-    $mail->addCC('fco.sl93@gmail.com', $nombreCabecera);
+    $mail->addCC('jose.escobar@sermecchile.com', $nombreCabecera);
+    // $mail->addCC('fco.sl93@gmail.com', $nombreCabecera);
     // $mail->addBCC('bcc@example.com');
 
     //Content
