@@ -40,6 +40,7 @@ window.addEventListener('load', function(){
     $('body').removeClass('hidden');
     menus();
 });
+
 window.addEventListener('click',function(e){
     console.log(e.target);
     if(cerrado==false){

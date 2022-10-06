@@ -1,7 +1,3 @@
-:root {
-    --fondoNav: #f2f2f2;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +6,7 @@
 
 body {
     font-family: "open sans";
-    background: var(--fondoNav);
+    background: #f2f2f2;
 }
 
 
@@ -253,7 +249,7 @@ nav ul li > a:hover {
 
 .hover-galeria {
     position: absolute;
-    color: var(--fondoNav);
+    color: #f2f2f2;
     width: 100%;
     height: 100%;
     top: 0;
