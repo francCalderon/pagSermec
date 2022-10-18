@@ -34,8 +34,8 @@ try {
     //Recipients
     $mail->setFrom('cotizacionpagina@sermecchile.com', $nombreCabecera);             //que se envie desde el correo del hosting           
     $mail->addAddress('ventas@sermecchile.com');                                     //al correo de destino
-    $mail->addCC('jose.escobar@sermecchile.com', $nombreCabecera);
-    $mail->addBCC('katherine.leon.toledo@gmail.com');
+    $mail->addCC('sermec.chile@gmail.com', $nombreCabecera);
+    //$mail->addBCC('katherine.leon.toledo@gmail.com');
     //$mail->addReplyTo('info@example.com', 'Information');
 
     //Content
