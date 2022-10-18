@@ -61,7 +61,10 @@ $(document).ready(function() {
 					$('.done').fadeIn('slow');
 					
 				//if process.php returned 0/false (send mail failed)
-				} else alert('Gracias por contactarnos, tendrás pronto una respuesta.');				
+				} else 
+					alert('Gracias por contactarnos, tendrás pronto una respuesta.');
+					location.reload();
+					document.location.reload();
 			}		
 		});		
 		//cancel the submit button default behaviours

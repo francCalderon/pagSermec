@@ -8,7 +8,7 @@ $telefono = $_GET["phone"];
 $comentario = $_GET["message"];
 
 // Creacion del cuerpo del correo
-$cuerpo = "Nombre: " . $nombre . "<br>Correo: " . $mail .  "<br>Teléfono: " . $telefono . "<br>Mensaje: " . $comentario;
+$cuerpo = "Nombre: " . $nombre . "<br>Correo: " . $mail .  "<br>Telefono: " . $telefono . "<br>Mensaje: " . $comentario;
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -33,11 +33,10 @@ try {
 
     //Recipients
     $mail->setFrom('cotizacionpagina@sermecchile.com', $nombreCabecera);             //que se envie desde el correo del hosting           
-    //$mail->addAddress('fco.sl93@gmail.com');                                       //al correo de destino
-    $mail->addAddress('ventas@sermecchile.com');                                       //al correo de destino
-    //$mail->addReplyTo('info@example.com', 'Information');
+    $mail->addAddress('ventas@sermecchile.com');                                     //al correo de destino
     $mail->addCC('jose.escobar@sermecchile.com', $nombreCabecera);
     $mail->addBCC('katherine.leon.toledo@gmail.com');
+    //$mail->addReplyTo('info@example.com', 'Information');
 
     //Content
     $mail->isHTML(true);                                                //Set email format to HTML
@@ -46,10 +45,7 @@ try {
     $mail->Charset = 'UTF-8';
 
     $mail->send();
-    echo '<script>
-        alert("El mensaje se envió correctamente");
-        window.history.go(-1);
-        </script>';
+    echo 'Mensaje enviado';
 } catch (Exception $e) {
     echo "Hubo un error al enviar el mensaje: {$mail->ErrorInfo}";
 }
