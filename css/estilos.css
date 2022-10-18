@@ -5,131 +5,16 @@
 }
 
 body {
-    font-family: "open sans";
+    font-family: 'Times New Roman', Times, serif !important;
     background: #f2f2f2;
 }
 
-
-/* HEADER */
-
-header {
-    width: 100%;
-    height: 620px;
-    background: #000428;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.63), hsla(235, 72%, 29%, 0.459)), url(../img/header2.jpg);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.63), hsla(235, 72%, 29%, 0.459)), url(../img/header2.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+p{
+    color: #282b68; 
 }
 
-
-
-/* ESTILOS PARA NUEVAS PAGINAS */
-
-.headerPag {
-    width: 100%;
-    height: 590px;
-    background: #000428;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.37), hsla(235, 72%, 29%, 0.356)), url(../img/imgPages.jpg);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.37), hsla(235, 72%, 29%, 0.356)), url(../img/imgPages.jpg);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
-
-#titulo-pags {
-    padding: 130px 0 130px 0;
-}
-
-#titulo-pags-pr {
-    padding: 155px 0 155px 0;
-}
-
-#backSeccColor {
-    background-color: rgb(177, 208, 224, 0.7);
-    background-attachment: fixed;
-    padding: auto;
-}
-
-#backSeccNoColor {
-    padding: auto;
-}
-
-.imgServ {
-    background-color: #B1D0E0;
-}
-
-.figure-serv {
-    max-width: 300px !important;
-}
-
-#encabezado {
-    padding: 30px 0 0 0;
-}
-
-#encabezado-fanPage {
-    padding: 30px 0 0 0;
-}
-
-.figure-img{
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .5);
-}
-
-.figure-img:hover{
-    transform: scale(1.2);
-}
-
-/* NAV*/
-
-.icono {
-    display: none;
-}
-
-nav {
-    width: 100%;
-    height: 90px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
-}
-
-.cont-nav {
-    margin: auto;
-    height: inherit;
-    overflow: hidden;
-}
-
-/* COLOR LETRAS */
-nav ul li > a {
-    color: #fff !important;
-    font-size: 18px !important;
-    -webkit-text-stroke: 0.5px black;
-    text-decoration: none;
-    border-bottom: 4px solid transparent;
-    color: inherit;
-}
-
-/* SUBRAYADO */
-nav ul li > a:hover {
-    border-bottom: 5px solid rgb(20, 152, 164);
-    transition: 0.1s;
-}
-
-/* COLOR SUBMENU */
-.dropdown-menu {
-    background-color: rgb(20, 152, 164) !important;
-}
-
-.logo-encabezado {
-    max-width: 18rem;
-}
-
-.imgFan {
-    max-width: 3rem;
+h1, h2, h3, h4{
+    color: #282b68;
 }
 
 /* Preloader */
@@ -193,42 +78,115 @@ nav ul li > a:hover {
     }
 }
 
-/* QUIENES SOMOS*/
+/* HEADER */
 
-
-/* CLIENTES CARRUSEL*/
-
-.carrusel {
-    height: auto;
-    display: flex;
-    align-items: center;
-}
-
-.carrusel-items {
-    display: flex;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding: 30px 0px;
-}
-
-.carrusel-item {
-    min-width: 310px;
-    max-width: 320px;
-    height: 250px;
-    outline: 2px solid black;
-    cursor: pointer;
-}
-
-.carrusel-item img {
+header{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 580px;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(210, 22%, 87%, 0.63), hsla(220, 100%, 99%, 0.596)), url(../img/header3.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(210, 22%, 87%, 0.63), hsla(210, 22%, 87%, 0.63)), url(../img/header3.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
-.carrusel-item:hover {
+.titulo-uno{
+    color: #282b68;
+}
+
+#encabezado {
+    padding: 71px 0 71px 0;
+}
+
+.logo-encabezado {
+    max-width: 18rem;
+}
+
+.imgFan {
+    max-width: 2.5rem;
+}
+
+/* ESTILOS PARA NUEVAS PAGINAS */
+
+.headerPag {
+    width: 100%;
+    height: 580px;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.37), hsla(235, 72%, 29%, 0.589)), url(../img/imgPages.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.37), hsla(235, 72%, 29%, 0.589)), url(../img/imgPages.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#titulo-pags {
+    padding: 130px 0 130px 0;
+}
+
+.titulo-uno-pgs{
+    color: #fff !important;
+}
+
+#backSeccNoColor {
+    padding: auto;
+}
+
+.figure-serv {
+    max-width: 300px !important;
+}
+
+.figure-img{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .5);
+}
+
+.figure-img:hover{
     transform: scale(1.2);
 }
 
+/* NAV*/
+nav {
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+.cont-nav {
+    margin: auto;
+    height: inherit;
+    overflow: hidden;
+}
+
+/* COLOR LETRAS */
+nav ul li > a {
+    color: #000 !important;
+    font-size: 18px !important;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    color: inherit;
+}
+
+/* SUBRAYADO */
+nav ul li > a:hover {
+    border-bottom: 0.1px solid #000;
+    transition: 0.1s;
+}
+
+/* COLOR SUBMENU */
+.dropdown-menu {
+    background-color: #fff !important;
+}
+
+/* CLIENTES CARRUSEL*/
+.imgCliente{
+    max-height: 200px !important;
+    padding: 10px;
+}
 
 /* PROYECTOS EJECUTADOS */
 
@@ -419,4 +377,88 @@ footer {
     font-size: 15px;
     margin: 20px 0 0 0;
     color: #9e9797;
+}
+
+/* DISEÑO RESPONSIVE */
+
+/* pantalla xl */
+@media screen and (max-width: 1200px) {
+
+    /* menu */
+
+    /* encabezado */
+
+    /* mision y vision */
+
+    /* clientes */
+
+    /* fomulario contacto */
+
+    /* areas de mantenimiento */
+
+    .mants {
+        width: 200px !important;
+    }
+}
+
+
+/* pantalla lg */
+@media screen and (max-width: 992px) {
+
+
+    /* menu */
+
+    /* encabezado */
+
+    /* mision y vision */
+
+    /* clientes */
+
+    /* fomulario contacto */
+
+    /* areas de mantenimiento */
+
+    .mants {
+        width: 200px !important;
+    }
+}
+
+/* pantalla md */
+@media screen and (max-width: 720px) {
+    /* menu */
+
+    /* encabezado */
+
+    /* mision y vision */
+
+    /* clientes */
+
+    /* fomulario contacto */
+
+    /* areas de mantenimiento */
+
+    .mants {
+        width: 200px !important;
+    }
+
+}
+
+/* pantalla sm */
+@media screen and (max-width: 576px) {
+
+    /* menu */
+
+    /* encabezado */
+
+    /* mision y vision */
+
+    /* clientes */
+
+    /* fomulario contacto */
+
+    /* areas de mantenimiento */
+
+    .mants {
+        width: 200px !important;
+    }
 }
