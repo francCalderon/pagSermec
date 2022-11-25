@@ -116,9 +116,73 @@ header{
     height: 580px;
     background: #000428;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.37), hsla(235, 72%, 29%, 0.589)), url(../img/imgPages.jpg);
+    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.164), hsla(235, 72%, 29%, 0.219)), url(../img/imgPages.jpg);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.37), hsla(235, 72%, 29%, 0.589)), url(../img/imgPages.jpg);
+    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.164), hsla(235, 72%, 29%, 0.219)), url(../img/imgPages.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* EQUIPOS ALTERNATIVOS */
+
+.headerPagEqAl {
+    width: 100%;
+    height: 600px;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.164), hsla(235, 72%, 29%, 0.219)), url(../img/encabezados/alternativos.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.164), hsla(235, 72%, 29%, 0.219)), url(../img/encabezados/alternativos.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* EQUIPOS SANITARIOS */
+
+.headerPagEqSa {
+    width: 100%;
+    height: 600px;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.164), hsla(235, 72%, 29%, 0.219)), url(../img/encabezados/sanitario.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.164), hsla(235, 72%, 29%, 0.219)), url(../img/encabezados/sanitario.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* EQUIPOS SANITARIOS */
+
+.headerPagMuInox {
+    width: 100%;
+    height: 600px;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.164), hsla(235, 72%, 29%, 0.219)), url(../img/encabezados/aceroInoxidable.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.164), hsla(235, 72%, 29%, 0.219)), url(../img/encabezados/aceroInoxidable.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* PROYECTOS EJECUTADOS */
+
+.headerPagProy {
+    width: 100%;
+    height: 600px;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(208, 85%, 61%, 0.164), hsla(235, 72%, 29%, 0.219)), url(../img/encabezados/proEjecutados.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(208, 85%, 61%, 0.164), hsla(235, 72%, 29%, 0.219)), url(../img/encabezados/proEjecutados.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-attachment: fixed;
     background-position: center;
@@ -187,8 +251,6 @@ nav ul li > a:hover {
     max-height: 200px !important;
     padding: 10px;
 }
-
-/* PROYECTOS EJECUTADOS */
 
 .imagen-port {
     overflow: hidden;
