@@ -254,10 +254,11 @@ nav ul li > a:hover {
     background-color: #fff !important;
 }
 
-/* CLIENTES CARRUSEL*/
+/* CLIENTES */
+
+
 .imgCliente{
-    max-height: 200px !important;
-    padding: 10px;
+    max-height: 150px !important;
 }
 
 .imagen-port {
