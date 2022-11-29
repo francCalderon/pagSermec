@@ -109,12 +109,6 @@ header{
     max-width: 2.5rem;
 }
 
-/* INDEX - PROYECTOS EJECUTADOS */
-
-.imgProy{
-    max-width: 300px;
-}
-
 /* ESTILOS PARA NUEVAS PAGINAS */
 
 /* PAGINAS NUEVAS EN GENERAL */
@@ -256,9 +250,14 @@ nav ul li > a:hover {
 
 /* CLIENTES */
 
-
 .imgCliente{
     max-height: 150px !important;
+}
+
+/* INDEX PROYETOS EJECUTADOS */
+
+.imgProy{
+    max-width: auto;
 }
 
 .imagen-port {
@@ -271,7 +270,7 @@ nav ul li > a:hover {
 
 .imagen-port>img {
     width: auto;
-    height: 50vh;
+    height: 40vh;
     object-fit: cover;
     display: block;
 }
